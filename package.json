@@ -1,0 +1,21 @@
+{
+    "name": "eleventy-blog",
+    "version": "1.0.0",
+    "description": "Enhanced blog built with Eleventy",
+    "main": "index.js",
+    "scripts": {
+      "build": "eleventy",
+      "serve": "eleventy --serve",
+      "start": "eleventy --serve"
+    },
+    "keywords": [
+      "eleventy",
+      "blog",
+      "11ty"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+      "@11ty/eleventy": "^2.0.1"
+    }
+  }

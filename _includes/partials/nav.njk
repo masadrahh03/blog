@@ -1,0 +1,23 @@
+<nav class="site-nav">
+  <button class="menu-toggle" aria-expanded="false">
+    <span class="hamburger"></span>
+    <span class="sr-only">Menu</span>
+  </button>
+
+  <ul class="nav-links">
+    {% for item in site.navigation %}
+      <li class="nav-item">
+        <a href="{{ item.url }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.text }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
+
+<script>
+  // Simple mobile menu toggle
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+    this.setAttribute('aria-expanded', !expanded);
+    document.querySelector('.nav-links').classList.toggle('show');
+  });
+</script>

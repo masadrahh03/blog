@@ -1,0 +1,25 @@
+{
+    "title": "Habes' Blog",
+    "description": "A collection of thoughts, ideas, and insights.",
+    "url": "https://yourblog.com",
+    "author": "Habes",
+    "authorBio": "",
+    "socials": {
+      "github": "https://github.com/yourusername",
+      "linkedin": "https://www.linkedin.com/in/habes-masadrah-551117365/"
+    },
+    "navigation": [
+      {
+        "text": "Home",
+        "url": "/"
+      },
+      {
+        "text": "About",
+        "url": "/about/"
+      },
+      {
+        "text": "Archive",
+        "url": "/archive/"
+      }
+    ]
+  }

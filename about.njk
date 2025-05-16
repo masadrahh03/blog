@@ -1,0 +1,47 @@
+---
+layout: layouts/base.njk
+title: About
+permalink: /about/
+---
+
+<section class="about">
+  <header class="page-header">
+    <h1 class="page-title">About</h1>
+  </header>
+  
+  <div class="about-content">
+    <div class="about-text">
+      <h2>About {{ site.title }}</h2>
+      <p>This is where you can share information about yourself or your blog. Replace this with your own content.</p>
+      
+      <p>You might want to include:</p>
+      <ul>
+        <li>Who you are and what you do</li>
+        <li>Why you started this blog</li>
+        <li>Your expertise and background</li>
+        <li>What readers can expect to find here</li>
+        <li>How to contact you</li>
+      </ul>
+      
+      <h3>Contact</h3>
+      <p>The best way to reach me is via email at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+      
+      <div class="about-social">
+        <h3>Connect with me</h3>
+        <div class="social-links">
+          {% if site.socials.twitter %}
+            <a href="{{ site.socials.twitter }}" target="_blank" rel="noopener noreferrer" class="social-link">Twitter</a>
+          {% endif %}
+          
+          {% if site.socials.github %}
+            <a href="{{ site.socials.github }}" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
+          {% endif %}
+          
+          {% if site.socials.linkedin %}
+            <a href="{{ site.socials.linkedin }}" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
